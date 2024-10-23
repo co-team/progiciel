@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progiciel-iframe</title>
+    <link rel="icon" type="image/x-icon" href="../public/images/icon.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<button onclick="window.history.back()"><i class="fas fa-arrow-left"></i></button>
+<div style="width:1200px; margin-top: 100px;justify-content: space-around;display: flex;margin-left: 7%;margin-right: 7%" class="ifr">
+
+    <div >
+
+        <p><button onclick="var el = document.getElementById('elements'); el.requestFullscreen();">Portfolio</button></p>
+        <iframe class="elements" id="elements" width="560px" height="315px" src="https://www.coteamdev.tech/" frameborder="0" allowfullscreen style="-webkit-box-shadow: 5px 5px 15px 5px #000000;
+box-shadow: 5px 5px 15px 5px #000000;padding: 10px;margin-bottom: 10px"></iframe>
+    </div>
+    <div >
+
+        <p><button onclick="var el = document.getElementById('element'); el.requestFullscreen();">Gestion couvoir</button></p>
+        <iframe class="element" id="element" width="560px" height="315px" src="http://scar-rental.coteamdev.tech/" frameborder="0" allowfullscreen style="-webkit-box-shadow: 5px 5px 15px 5px #000000;
+box-shadow: 5px 5px 15px 5px #000000;padding: 10px;margin-bottom: 10px"></iframe>
+    </div>
+    <div >
+
+        <p><button onclick="var el = document.getElementById('parc'); el.requestFullscreen();">Gestion parc auto</button></p>
+        <iframe class="parc" id="parc" width="560px" height="315px" src="http://www.carrentale.coteamdev.tech/" frameborder="0" allowfullscreen style="-webkit-box-shadow: 5px 5px 15px 5px #000000;
+box-shadow: 5px 5px 15px 5px #000000;padding: 10px;margin-bottom: 10px"></iframe>
+    </div>
+    <div>
+
+        <p><button onclick="var el = document.getElementById('ecommerce'); el.requestFullscreen();">E commerce</button></p>
+        <iframe class="ecommerce" id="ecommerce" width="560px" height="315px" src="http://chatapp.coteamdev.tech/" frameborder="0" allowfullscreen  style="-webkit-box-shadow: 5px 5px 15px 5px #000000;
+box-shadow: 5px 5px 15px 5px #000000;padding: 10px"></iframe>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+<style>
+    .fa-arrow-left {
+        background: #e4d8ed;
+        padding: 13px;
+        border-radius: 100%;
+        font-size: 1.5rem;
+        color: green;
+        box-shadow: 0 1px 4px rgb(255, 255, 255);
+        animation: moveLeft 0.2s forwards;
+    }
+
+    @keyframes moveLeft {
+        from {
+            transform: translate(10px);
+        }
+        to {
+            transform: translate(0);
+        }
+    }
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+       .ifr{flex-direction: column;
+        margin-bottom:20px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+       }
+    }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+       .ifr{flex-direction: column;
+        margin-bottom:20px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+       }
+    }
+    /**********
+    iPad 3
+    **********/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width : 1224px) {
+        .ifr{flex-direction: row;
+            flex-flow: row wrap;
+            display: flex;
+        }
+    }
+
+    /* Large screens ----------- */
+    @media only screen and (min-width : 1824px) {
+        .ifr{flex-direction: row;
+            flex-flow: row wrap;
+            display: flex;
+        }
+    }
+
+    /* iPhone 4 ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* iPhone 5 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* iPhone 6 ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+       .ifr{flex-direction: column;
+        margin-bottom:20px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+       }
+    }
+
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* iPhone 6+ ----------- */
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+      .ifr{flex-direction: column;
+        margin-bottom:20px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+      }
+    }
+
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+        .ifr{flex-direction: column;
+            margin-bottom:20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    /* Samsung Galaxy S3 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+       .ifr{flex-direction: column;
+        margin-bottom:20px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+       }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+      .ifr{flex-direction: column;
+        margin-bottom:20px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+      }
+    }
+
+    /* Samsung Galaxy S4 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+      .ifr{flex-direction: column;
+        margin-bottom:20px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+      }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+       .ifr{flex-direction: column;
+        margin-bottom:20px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+       }
+    }
+
+    /* Samsung Galaxy S5 ----------- */
+    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+       .ifr{flex-direction: column;
+        margin-bottom:20px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+       }
+    }
+
+    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+       .ifr{flex-direction: column;
+        margin-bottom:20px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+       }
+    }
+</style>
+
+
+
+
+</body>
+</html>
